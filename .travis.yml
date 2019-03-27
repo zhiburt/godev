@@ -1,0 +1,22 @@
+sudo: false
+
+language: go
+
+go:
+  - 1.11.x
+
+git:
+  depth: 1
+
+install: true
+
+notifications:
+  email: false
+
+before_script:
+  - go get github.com/golangci/golangci-lint/cmd/golangci-lint
+  - go install github.com/golangci/golangci-lint/cmd/golangci-lint
+
+script:
+  - golangci-lint run
+  - make test 
