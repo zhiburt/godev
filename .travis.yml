@@ -1,10 +1,20 @@
 language: go
 
+sudo: false
+
 go:
   - 1.11.x
 
 notifications:
   email: false
 
+
+install:
+  - # skip
+
+before_script:
+  - go get github.com/golangci/golangci-lint/cmd/golangci-lint
+  - go install github.com/golangci/golangci-lint/cmd/golangci-lint
+
 script:
-  - make test 
+  - golangci-lint run
