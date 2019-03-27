@@ -1,8 +1,6 @@
 program_name = godev
 
 run: install
-	go test -v -race
-	./godev
 
 test:
 	go vet ./...
