@@ -11,5 +11,5 @@ notifications:
 before_script:
   -
 
-  script:
+script:
   - make test
