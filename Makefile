@@ -1,4 +1,5 @@
-program_name = godev
+program_name = introducer
+introducer_folder = introducer/
 
 run:  install
 	./$(program_name)
@@ -9,4 +10,4 @@ test:
 	go test -v -race -short
 
 install:
-	go build -o $(program_name) main.go
+	go build -o $(introducer_folder)build/$(program_name) $(introducer_folder)cli/main.go
