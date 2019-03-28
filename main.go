@@ -9,6 +9,16 @@ func main() {
 }
 
 // Div divide some arguments
+func Mul(numbers ...float64) (res float64) {
+	res = numbers[0]
+	for _, num := range numbers[1:] {
+		res = res * num
+	}
+
+	return
+}
+
+// Div divide some arguments
 func Div(numbers ...float64) (res float64) {
 	res = numbers[0]
 	for _, num := range numbers[1:] {
