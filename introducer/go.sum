@@ -1,0 +1,4 @@
+github.com/neo4j-drivers/gobolt v1.7.3 h1:J9pcNxBTrErP+GepaNfIVg2yY63II49jpfxoqk3i1lY=
+github.com/neo4j-drivers/gobolt v1.7.3/go.mod h1:O9AUbip4Dgre+CD3p40dnMD4a4r52QBIfblg5k7CTbE=
+github.com/neo4j/neo4j-go-driver v1.7.3 h1:Ft1N4HOMTPayHcJpZNHAfTzJ+YVx6PAN87EiKgi1Nnk=
+github.com/neo4j/neo4j-go-driver v1.7.3/go.mod h1:aPO0vVr+WnhEJne+FgFjfsjzAnssPFLucHgGZ76Zb/U=
