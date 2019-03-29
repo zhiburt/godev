@@ -5,8 +5,7 @@ run:  install
 	./$(program_name)
 
 test:
-	go vet ./...
-	go fmt ./...
+
 	go test -v -race -short ./$(introducer_folder)
 
 install:

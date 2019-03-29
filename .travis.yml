@@ -25,7 +25,7 @@ before_script:
   - cd introducer
   - go mod download
   - cd ..
-  - ps
+  - ls
 
 script:
   - golangci-lint run introducer/
