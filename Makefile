@@ -7,7 +7,7 @@ run:  install
 test:
 	go vet ./...
 	go fmt ./...
-	go test -v -race -short
+	go test -v -race -short ./$(introducer_folder)
 
 install:
 	go build -o $(introducer_folder)build/$(program_name) $(introducer_folder)cli/main.go
